@@ -603,7 +603,8 @@
                         else if ([currentPath isEqualToString:@"/rss/channel/item/pubDate"]) { if (processedText.length > 0) item.date = [NSDate dateFromInternetDateTimeString:processedText formatHint:DateFormatHintRFC822]; processed = YES; }
                         else if ([currentPath isEqualToString:@"/rss/channel/item/enclosure"]) { [self createEnclosureFromAttributes:currentElementAttributes andAddToItem:item]; processed = YES; }
                         else if ([currentPath isEqualToString:@"/rss/channel/item/dc:date"]) { if (processedText.length > 0) item.date = [NSDate dateFromInternetDateTimeString:processedText formatHint:DateFormatHintRFC3339]; processed = YES; }
-                        else if ([currentPath isEqualToString:@"/rss/channel/item/brilinta:leaderboard"]) { if (processedText.length > 0) item.brilintaLeaderboard = processedText; processed = YES; }
+                        else if ([currentPath isEqualToString:@"/rss/channel/item/brilinta:nbrxLeaderboad"]) { if (processedText.length > 0) item.nbrxLeaderboard = processedText; processed = YES; }
+                        else if ([currentPath isEqualToString:@"/rss/channel/item/brilinta:dddLeaderboard"]) { if (processedText.length > 0) item.dddLeaderboard = processedText; processed = YES; }
                         else if ([currentPath isEqualToString:@"/rss/channel/item/category"]) { if (processedText.length > 0) item.category = processedText; processed = YES; }
 
                     }

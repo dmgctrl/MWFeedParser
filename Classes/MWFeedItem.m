@@ -33,7 +33,7 @@
 
 @implementation MWFeedItem
 
-@synthesize identifier, title, link, date, updated, summary, content, author, brilintaLeaderboard, category, enclosures;
+@synthesize identifier, title, link, date, updated, summary, content, author, nbrxLeaderboard, dddLeaderboard, category, enclosures;
 
 #pragma mark NSObject
 

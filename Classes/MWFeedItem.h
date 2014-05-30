@@ -39,7 +39,8 @@
 	NSString *summary; // Description of item
 	NSString *content; // More detailed content (if available)
 	NSString *author; // Item author
-    NSString *brilintaLeaderboard; // leaderboardJSON string
+    NSString *nbrxLeaderboard; // leaderboardJSON string
+    NSString *dddLeaderboard; // leaderboardJSON string
     NSString *category; // Item Category
 
 	// Enclosures: Holds 1 or more item enclosures (i.e. podcasts, mp3. pdf, etc)
@@ -59,7 +60,8 @@
 @property (nonatomic, copy) NSString *summary;
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *author;
-@property (nonatomic, copy) NSString *brilintaLeaderboard;
+@property (nonatomic, copy) NSString *nbrxLeaderboard;
+@property (nonatomic, copy) NSString *dddLeaderboard;
 @property (nonatomic, copy) NSString *category;
 @property (nonatomic, copy) NSArray *enclosures;
 
